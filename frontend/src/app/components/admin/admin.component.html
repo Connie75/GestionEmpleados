@@ -1,0 +1,23 @@
+<div class="admin-container">
+    <h2>Gestión de Administradores</h2>
+  
+    <form (ngSubmit)="addAdmin()">
+      <label for="username">Username:</label>
+      <input type="text" id="username" [(ngModel)]="nuevoAdmin.username" name="username" required>
+  
+      <label for="password">Password:</label>
+      <input type="password" id="password" [(ngModel)]="nuevoAdmin.password" name="password" required>
+  
+      <label for="role">Role:</label>
+      <input type="text" id="role" [(ngModel)]="nuevoAdmin.role" name="role" required>
+  
+      <button type="submit">Agregar Admin</button>
+    </form>
+  
+    <ul class="admin-list">
+      <li *ngFor="let admin of admins">
+        {{ admin.username }} - {{ admin.role }}
+      </li>
+    </ul>
+  </div>
+  

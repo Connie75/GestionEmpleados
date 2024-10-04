@@ -1,0 +1,16 @@
+.empleados-container {
+    padding: 1rem;
+  }
+  
+  .empleados-list {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .empleados-list li {
+    background-color: #fff;
+    margin-bottom: 0.5rem;
+    padding: 0.5rem;
+    border: 1px solid #ddd;
+  }
+  

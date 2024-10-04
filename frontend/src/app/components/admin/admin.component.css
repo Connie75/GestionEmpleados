@@ -1,0 +1,16 @@
+.admin-container {
+    padding: 1rem;
+  }
+  
+  .admin-list {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .admin-list li {
+    background-color: #fff;
+    margin-bottom: 0.5rem;
+    padding: 0.5rem;
+    border: 1px solid #ddd;
+  }
+  

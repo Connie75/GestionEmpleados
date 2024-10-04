@@ -1,0 +1,24 @@
+<div class="empleados-container">
+    <h2>Gestión de Empleados</h2>
+  
+    <form (ngSubmit)="agregarEmpleado()">
+      <label for="nombre">Nombre:</label>
+      <input type="text" id="nombre" [(ngModel)]="nuevoEmpleado.nombre" name="nombre" required>
+  
+      <label for="puesto">Puesto:</label>
+      <input type="text" id="puesto" [(ngModel)]="nuevoEmpleado.puesto" name="puesto" required>
+  
+      <label for="salario">Salario:</label>
+      <input type="number" id="salario" [(ngModel)]="nuevoEmpleado.salario" name="salario" required>
+  
+      <button type="submit">Agregar Empleado</button>
+    </form>
+  
+    <ul class="empleados-list">
+      <li *ngFor="let empleado of empleados">
+        {{ empleado.nombre }} - {{ empleado.puesto }} - {{ empleado.salario }}
+        <button (click)="eliminarEmpleado(empleado._id)">Eliminar</button>
+      </li>
+    </ul>
+  </div>
+  

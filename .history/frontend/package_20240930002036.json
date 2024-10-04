@@ -1,0 +1,16 @@
+{
+  "name": "GestionEmpleados",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@angular-devkit/build-angular": "^18.2.6",
+    "@angular/cli": "^18.2.6"
+  }
+}

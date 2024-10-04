@@ -1,0 +1,20 @@
+<div class="config-container">
+    <h2>Gestión de Configuraciones</h2>
+  
+    <form (ngSubmit)="addConfig()">
+      <label for="key">Key:</label>
+      <input type="text" id="key" [(ngModel)]="nuevaConfig.key" name="key" required>
+  
+      <label for="value">Value:</label>
+      <input type="text" id="value" [(ngModel)]="nuevaConfig.value" name="value" required>
+  
+      <button type="submit">Agregar Configuración</button>
+    </form>
+  
+    <ul class="config-list">
+      <li *ngFor="let config of configs">
+        {{ config.key }}: {{ config.value }}
+      </li>
+    </ul>
+  </div>
+  

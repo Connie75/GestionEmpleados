@@ -1,0 +1,12 @@
+<form (ngSubmit)="addLocal()">
+  <input type="text" id="name" [(ngModel)]="nuevoLocal.name" name="name" required>
+  <input type="text" id="address" [(ngModel)]="nuevoLocal.address" name="address" required>
+  <input type="text" id="phone" [(ngModel)]="nuevoLocal.phone" name="phone" required>
+  <button type="submit">Add Local</button>
+</form>
+
+<ul>
+  <li *ngFor="let local of locales">
+    {{ local.name }} - {{ local.address }} - {{ local.phone }}
+  </li>
+</ul>
